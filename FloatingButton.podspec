@@ -75,7 +75,7 @@ Pod::Spec.new do |spec|
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  spec.source_files  = "FloatingButton/*.{swift}"
+  spec.source_files  = "FloatingButton/*.{swift,.h,.plist}"
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -91,7 +91,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.framework  = "UIKit"
-  # spec.swift_version = "5.0"
+  spec.swift_version = "4.2"
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
