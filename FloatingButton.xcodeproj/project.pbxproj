@@ -10,6 +10,8 @@
 		ECC1414E25C1D6B600F2FCB9 /* FloatingButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECC1414425C1D6B600F2FCB9 /* FloatingButton.framework */; };
 		ECC1415325C1D6B600F2FCB9 /* FloatingButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC1415225C1D6B600F2FCB9 /* FloatingButtonTests.swift */; };
 		ECC1415525C1D6B600F2FCB9 /* FloatingButton.h in Headers */ = {isa = PBXBuildFile; fileRef = ECC1414725C1D6B600F2FCB9 /* FloatingButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ECC1416125C2800800F2FCB9 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECC1416025C2800800F2FCB9 /* images.xcassets */; };
+		ECC1416525C280C000F2FCB9 /* FloatingButtonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC1416425C280C000F2FCB9 /* FloatingButtonController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		ECC1414D25C1D6B600F2FCB9 /* FloatingButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FloatingButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECC1415225C1D6B600F2FCB9 /* FloatingButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButtonTests.swift; sourceTree = "<group>"; };
 		ECC1415425C1D6B600F2FCB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECC1416025C2800800F2FCB9 /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = images.xcassets; sourceTree = "<group>"; };
+		ECC1416425C280C000F2FCB9 /* FloatingButtonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButtonController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 			children = (
 				ECC1414725C1D6B600F2FCB9 /* FloatingButton.h */,
 				ECC1414825C1D6B600F2FCB9 /* Info.plist */,
+				ECC1416025C2800800F2FCB9 /* images.xcassets */,
+				ECC1416425C280C000F2FCB9 /* FloatingButtonController.swift */,
 			);
 			path = FloatingButton;
 			sourceTree = "<group>";
@@ -147,6 +153,7 @@
 				TargetAttributes = {
 					ECC1414325C1D6B600F2FCB9 = {
 						CreatedOnToolsVersion = 12.0.1;
+						LastSwiftMigration = 1200;
 					};
 					ECC1414C25C1D6B600F2FCB9 = {
 						CreatedOnToolsVersion = 12.0.1;
@@ -177,6 +184,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECC1416125C2800800F2FCB9 /* images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECC1416525C280C000F2FCB9 /* FloatingButtonController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +350,7 @@
 		ECC1415925C1D6B600F2FCB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = UZ3876V2TZ;
@@ -357,6 +367,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.varshney.FloatingButton;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +376,7 @@
 		ECC1415A25C1D6B600F2FCB9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = UZ3876V2TZ;
@@ -389,6 +401,7 @@
 		ECC1415C25C1D6B600F2FCB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UZ3876V2TZ;
 				INFOPLIST_FILE = FloatingButtonTests/Info.plist;
@@ -407,6 +420,7 @@
 		ECC1415D25C1D6B600F2FCB9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UZ3876V2TZ;
 				INFOPLIST_FILE = FloatingButtonTests/Info.plist;

@@ -16,16 +16,15 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "FloatingButton"
-  spec.version      = "0.0.1"
-  spec.summary      = "Floating Button on screen for iOS applications."
+  spec.version      = "0.1.0"
+  spec.summary      = "Floating Button for iOS applications."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = <<-DESC
-                   DESC
+  spec.description  = "Floating Button on screen for iOS applications."
 
   spec.homepage     = "https://github.com/yash0707/FloatingButton"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -39,7 +38,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.license      = "MIT (example)"
-  spec.license      = { :type => "MIT", :file => "LICENCE" }
+  spec.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -76,14 +75,14 @@ Pod::Spec.new do |spec|
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  spec.source_files  = "FloatingButton/**/*.{swift}"
+  spec.source_files  = "FloatingButton/*.{swift}"
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  A list of resources included with the Pod. These are copied into the
   #  target bundle with a build phase script. Anything else will be cleaned.
 
-  spec.resource  = "FloatingButton/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
+  # spec.resource  = "FloatingButton/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
 
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
